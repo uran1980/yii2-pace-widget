@@ -43,7 +43,7 @@ To activate this widget add this line to you view or layout:
 <?php echo uran1980\yii\widgets\pace\Pace::widget(); ?>
 ```
 
-Available otions **color**, **theme**, for example:
+Available options **color**, **theme**, for example:
 
 ```
 <?php echo uran1980\yii\widgets\pace\Pace::widget([
