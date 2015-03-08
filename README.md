@@ -43,12 +43,25 @@ To activate this widget add this line to you view or layout:
 <?php echo uran1980\yii\widgets\pace\Pace::widget(); ?>
 ```
 
-Available options **color**, **theme**, for example:
+Available options: **color**, **theme** and **paceOptions**, for example:
 
 ```php
 <?php echo uran1980\yii\widgets\pace\Pace::widget([
     'color' => 'green',
     'theme' => 'flash',
+]); ?>
+```
+
+or with paceOptions (**@see** [pace documentation](http://github.hubspot.com/pace/) for mor info):
+
+```
+<?php echo uran1980\yii\widgets\pace\Pace::widget([
+    'color' => 'blue',
+    'theme' => 'flash',
+    'paceOptions' => [
+        'ajax'      => false,
+        'document'  => false,
+    ],
 ]); ?>
 ```
 
