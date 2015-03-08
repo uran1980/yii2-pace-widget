@@ -4,6 +4,7 @@
     "version": "0.0.2",
     "type": "yii2-extension",
     "keywords": [
+        "yii2-pace-widget",
         "yii2",
         "pace",
         "widgets"
