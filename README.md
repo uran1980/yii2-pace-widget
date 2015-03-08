@@ -45,7 +45,7 @@ To activate this widget add this line to you view or layout:
 
 Available options **color**, **theme**, for example:
 
-```
+```php
 <?php echo uran1980\yii\widgets\pace\Pace::widget([
     'color' => 'green',
     'theme' => 'flash',
