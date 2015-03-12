@@ -15,13 +15,11 @@ class Pace extends \yii\base\Widget
      */
     public function run()
     {
-        $view = $this->getView();
-
         if ( !empty($this->paceOptions) ) {
-            $view->registerJs('window.paceOptions = ' . Json::encode($this->paceOptions), \yii\web\View::POS_HEAD);
+            $this->view->registerJs('window.paceOptions = ' . Json::encode($this->paceOptions), \yii\web\View::POS_HEAD);
         }
 
-        $bundle = PaceAsset::register($view);
+        $bundle = PaceAsset::register($this->view);
         $bundle->css = [
             "themes/{$this->color}/pace-theme-{$this->theme}.css",
         ];
